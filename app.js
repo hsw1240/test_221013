@@ -11,6 +11,6 @@ app.use(function(req, res, next) {
     res.end('<h1>Express 서버에서 응답한 결과입니다.</h1>');
 });
 
-http.createServer(app).listen(3000, function(){
+http.createServer(app).listen(5000, function(){
     console.log('Express 서버가 3000번 포트에서 시작됨');
 });
