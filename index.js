@@ -10,7 +10,7 @@ app.use(function(req, res, next) {
     res.writeHead('200', {'Content-Type':'text/html;charset=utf8'});
     res.end('<h1>Express 서버에서 응답한 결과입니다.</h1>');
 });
-
-http.createServer(app).listen(5000, function(){
+var port = process.env.PORT || 3000;
+http.createServer(app).listen(port, function(){
     console.log('Express 서버가 3000번 포트에서 시작됨');
 });
