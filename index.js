@@ -8,7 +8,7 @@ app.use(function(req, res, next) {
     console.log('첫 번째 미들웨어에서 요청을 처리함');
 
     res.writeHead('200', {'Content-Type':'text/html;charset=utf8'});
-    res.end('<h1>CI/CD 테스트 두번째</h1>');
+    res.end('<h1>CI/CD 테스트 세번째</h1>');
 });
 var port = process.env.PORT || 3000;
 http.createServer(app).listen(port, function(){
