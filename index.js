@@ -12,5 +12,5 @@ app.use(function(req, res, next) {
 });
 var port = process.env.PORT || 3000;
 http.createServer(app).listen(port, function(){
-    console.log('Express 서버가 3000번 포트에서 시작됨');
+    console.log('Express 서버가 3000번 포트에서 시작됨2');
 });
